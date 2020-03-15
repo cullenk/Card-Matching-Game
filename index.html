@@ -3,18 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Frijole&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
     <title>Mix-and-Match</title>
   </head>
   <body>
     <h1 class="page-title">Mix-and-Match</h1>
+    <div class="overlay-text visible">
+      Click to Start
+    </div>
+    <div id="game-over-text" class="overlay-text">
+      GAME OVER
+      <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+      VICTORY
+      <span class="overlay-text-small">Click to Restart</span>
+    </div>
+
     <div class="game-container">
       <div class="game-info-container">
         <div class="game-info">
           Time <span id="time-remaining">100</span>
         </div>
-        <div class="game-info">
+        <div class="game-info flips-text">
           Flips <span id="flips">0</span>
         </div>
       </div>
@@ -42,7 +55,7 @@
           <img class="card-value" src="Assets/Images/Bat.png">
         </div>
       </div>
-      <div class="card visible">
+      <div class="card">
         <div class="card-back card-face">
           <img class="cob-web cob-web-top-left"
           src="Assets/Images/Cobweb.png">
@@ -404,5 +417,6 @@
       </div>
 
     </div>
+    <script src="js/app.js" async></script>
   </body>
 </html>
