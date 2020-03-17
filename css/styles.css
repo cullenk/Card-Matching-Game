@@ -20,12 +20,6 @@ body {
   font-size: 6em;
 }
 
-.game-info-container {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: space-between;
-}
-
 .game-info {
   font-family: 'Frijole', cursive;
   color: #FFBB89;
@@ -43,6 +37,12 @@ body {
   grid-gap: 10px;
   justify-content: center;
   perspective: 500px;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card {
